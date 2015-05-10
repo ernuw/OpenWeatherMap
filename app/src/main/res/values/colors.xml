@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary1">#4CAF50</color>
+    <color name = "darkPrimary1">#388E3C</color>
+
+    <color name="primary2">#2196F3</color>
+    <color name = "darkPrimary2">#1976D2</color>
+
+    <color name="primary3">#FF5722</color>
+    <color name = "darkPrimary3">#E64A19</color>
+
+    <color name="primary4">#FFC107</color>
+    <color name = "darkPrimary4">#FFA000</color>
+
+    <color name="primary5">#8BC34A</color>
+    <color name = "darkPrimary5">#689F38</color>
+
+</resources>

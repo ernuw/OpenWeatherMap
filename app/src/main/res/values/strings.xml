@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Open Weather Map</string>
+
+
+	<!-- Navigation drawer titles-->
+    <string name="title.my_current_weather">Current weather</string>
+    <string name="title.my_forecast">Forecast weather</string>
+    <string name="title.more_cities">More cities</string>
+    <string name="title.settings">Settings</string>
+    <string name="title.libraries">Used libraries</string>
+
+    <string name="placeholder.progress_message">default_progress_message</string>
+	<string name="text.you_are_here">you are here</string>
+    <string name="action_update">refresh</string>
+</resources>
