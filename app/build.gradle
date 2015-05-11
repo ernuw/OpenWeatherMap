@@ -29,7 +29,11 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3'
     compile 'com.orhanobut:logger:1.8'
     compile 'com.pnikosis:materialish-progress:1.5'
-    compile 'com.mikepenz.materialdrawer:library:2.9.2@aar'
-    compile 'com.mikepenz.iconics:library:0.8.1@aar'
+    compile ('com.mikepenz.materialdrawer:library:2.9.5@aar') {
+        transitive = true;
+    }
     compile 'com.mikepenz.iconics:meteocons-typeface:1.1.1@aar'
+    compile ('com.mikepenz.aboutlibraries:library:4.7.2@aar') {
+        transitive = true;
+    }
 }

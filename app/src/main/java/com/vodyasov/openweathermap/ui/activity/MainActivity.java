@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 
+import com.mikepenz.aboutlibraries.Libs;
+import com.mikepenz.iconics.typeface.FontAwesome;
 import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.model.DividerDrawerItem;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
@@ -51,10 +53,14 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
                         .withIcon(NavigationItem.MORE_CITIES.getIcon()),
                     new DividerDrawerItem(),
                     new SecondaryDrawerItem()
-                        .withName(NavigationItem.MORE_CITIES.getTitle(this))
-                        .withIdentifier(NavigationItem.MORE_CITIES.getId())
-                        .withIcon(NavigationItem.MORE_CITIES.getIcon())
-                 )
+                        .withName(NavigationItem.SETTINGS.getTitle(this))
+                        .withIdentifier(NavigationItem.SETTINGS.getId())
+                        .withIcon(NavigationItem.SETTINGS.getIcon()),
+                    new SecondaryDrawerItem()
+                            .withName(R.string.title_libraries)
+                            .withIdentifier(100)
+                            .withIcon(FontAwesome.Icon.faw_github)
+                )
                 .withOnDrawerItemClickListener(this)
                 .build();
         mDrawer.setSelection(0);
@@ -94,6 +100,13 @@ public class MainActivity extends AppCompatActivity implements Drawer.OnDrawerIt
             setActionbarColor(navigationItem.getActionbarColor(this));
             setStatusbarColor(navigationItem.getStatusbarColor(this));
             navigationItem.show(getApplicationContext(), getFragmentManager(), R.id.fragment_container);
+        }
+        else
+        {
+            new Libs.Builder()
+                    .withFields(R.string.class.getFields())
+                    .withActivityStyle(Libs.ActivityStyle.DARK)
+                    .start(this);
         }
         mDrawerPosition = position;
     }

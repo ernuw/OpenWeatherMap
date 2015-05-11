@@ -4,6 +4,7 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Context;
 import android.support.annotation.ColorRes;
+import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 
@@ -100,7 +101,7 @@ public enum NavigationItem implements INavigationItem
     }
 
     @Override
-    public void show(Context context, FragmentManager fm, int containerId)
+    public void show(Context context, FragmentManager fm, @IdRes int containerId)
     {
         Fragment fragment = fm.findFragmentByTag(getTag());
         if (fragment == null)
