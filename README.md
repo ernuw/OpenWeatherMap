@@ -3,6 +3,8 @@ unofficial android-client for openweathermap.org
 
 *Awesome amazing open-source android-app :D*
 
+![NavigationDrawer](/art/device-2015-05-11-092242.png)
+
 ## License
 ```
 The MIT License (MIT)
